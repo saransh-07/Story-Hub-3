@@ -12,7 +12,7 @@ export default class Write extends React.Component{
         }
     }
     submitStory=async()=>{
-db.collection('Stories').doc('Story0001').update({
+db.collection('Stories').doc('Story0001').add({
     'Author' : this.state.author,
     'Title' : this.state.title,
     'Story' : this.state.story
